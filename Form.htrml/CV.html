@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="2.jpg" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#work">MY WORK</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#hobbies">HOBBIES</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h3>Hi, I'm <span>Amna</span></h3>
+            <h1><span class="typing-animation">WEB DEVELOPER</span></h1>
+            <p>As a web developer, I transform complex ideas into user-friendly, responsive websites that drive engagement and achieve business goals.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn">Hire Me</a>
+                <button id="downloadBtn" class="btn download-btn">Download Resume</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="Pic.jpg" alt="Profile Image">
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-details">
+            <div class="detail">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <h4>Who Am I?</h4>
+                <p>Driven by curiosity and a love for learning, I continuously explore emerging technologies to deliver innovative solutions that align with business goals and user needs.</p>
+            </div>
+            <div class="detail">
+                <ion-icon name="school-outline"></ion-icon>
+                <h4>Education</h4>
+                <p>
+                    <strong>2022-2027</strong><br>
+                    <strong>Bachelors in Engineering in Information Technology</strong><br>
+                    University of Riphah
+                </p>
+                <p>
+                    <strong>2004 - 2006</strong><br>
+                    <strong>Masters in Data Analysis</strong><br>
+                    Harvard School of Science and Management
+                </p>
+            </div>
+            <div class="detail">
+                <ion-icon name="briefcase-outline"></ion-icon>
+                <h4>Experience</h4>
+                <p>
+                    <strong>Web Developer at XYZ Company</strong><br>
+                    Currently working as a Web Developer at USA Company.
+                </p>
+                <p>
+                    <strong>Freelance Web Designer</strong><br>
+                    Freelance Web Designer, creating visually appealing and user-friendly websites for various clients.
+                </p>
+                <p>
+                    <strong>Intern at ABC Institute</strong><br>
+                    Previously interned at ABC Institute, gaining hands-on experience in web development and design.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Highlights Section -->
+    <section id="experience" class="section">
+        <h2>Experience Highlights</h2>
+        <div class="experience-timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h4>2023 – Present</h4>
+                    <h3>School Management</h3>
+                    <p class="company">DEV </p>
+                    <p class="location">Riphah , GGC</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h4>2023 – 2024</h4>
+                    <h3>Associate Design Director</h3>
+                    <p class="company">DEV </p>
+                    <p class="location">Riphah , GGC</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h4>2023 – 2024</h4>
+                    <h3>Senior UI/UX Designer</h3>
+                    <p class="company">Hoplony Tech Limited</p>
+                    <p class="location">Riphah , GGC</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skills-category">
+                <h3>Technical Skills</h3>
+                <div class="skill">
+                    <p>HTML <span>90%</span></p>
+                    <div class="progress-bar">
+                        <div class="progress html-progress"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>CSS <span>85%</span></p>
+                    <div class="progress-bar">
+                        <div class="progress css-progress"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>JavaScript <span>80%</span></p>
+                    <div class="progress-bar">
+                        <div class="progress js-progress"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>React <span>75%</span></p>
+                    <div class="progress-bar">
+                        <div class="progress react-progress"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Figma <span>70%</span></p>
+                    <div class="progress-bar">
+                        <div class="progress figma-progress"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3>Professional Skills</h3>
+                <div class="skill">
+                    <p>Team Work <span>95%</span></p>
+                    <div class="progress-bar">
+                        <div class="progress teamwork-progress"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Project Management <span>90%</span></p>
+                    <div class="progress-bar">
+                        <div class="progress pm-progress"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Creativity <span>85%</span></p>
+                    <div class="progress-bar">
+                        <div class="progress creativity-progress"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Communication <span>80%</span></p>
+                    <div class="progress-bar">
+                        <div class="progress communication-progress"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Problem Solving <span>90%</span></p>
+                    <div class="progress-bar">
+                        <div class="progress problem-solving-progress"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Work Section -->
+    <section id="work" class="section">
+        <h2>My Work</h2>
+        <div class="work-items">
+            <div class="work-item">
+                <img src="Project1.avif" alt="Project 1">
+                <h3>E-Commerce Website</h3>
+                <p>A fully functional e-commerce website built with React and Node.js. Features include product filtering, user authentication, and payment integration.</p>
+                <a href="#" class="work-link">View Project</a>
+            </div>
+            <div class="work-item">
+                <img src="Project 2.webp" alt="Project 2" class="resized-image">
+                <h3>Portfolio Website</h3>
+                <p>A modern portfolio website designed for a freelance photographer. Includes a gallery, contact form, and responsive design.</p>
+                <a href="#" class="work-link">View Project</a>
+            </div>
+            <div class="work-item">
+                <img src="Project3.avif" alt="Project 3">
+                <h3>Blog Platform</h3>
+                <p>A blogging platform with user authentication and CRUD functionality. Built with MERN stack (MongoDB, Express, React, Node.js).</p>
+                <a href="#" class="work-link">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="section">
+        <h2>Hobbies</h2>
+        <div class="hobbies-container">
+            <div class="hobby">
+                <ion-icon name="brush-outline"></ion-icon>
+                <h3>Painting</h3>
+                <p>I enjoy expressing my creativity through painting, especially abstract art.</p>
+            </div>
+            <div class="hobby">
+                <ion-icon name="game-controller-outline"></ion-icon>
+                <h3>Gaming</h3>
+                <p>I love playing strategy and adventure games in my free time.</p>
+            </div>
+            <div class="hobby">
+                <ion-icon name="basketball-outline"></ion-icon>
+                <h3>Sports</h3>
+                <p>I actively participate in basketball and enjoy staying fit.</p>
+            </div>
+        </div>
+    </section>
+
+   <!-- Contact Section -->
+<section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <div class="contact-container">
+        <div class="contact-form">
+            <form action="mailto:amnaawan123@gmail.com" method="POST" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p>Your thoughts matter, and I'm here to explore them with you!</p>
+            <div class="info-item">
+                <ion-icon name="mail-outline"></ion-icon>
+                <p>amnaawan123@gmail.com</p>
+            </div>
+            <div class="info-item">
+                <ion-icon name="call-outline"></ion-icon>
+                <p>03123456789</p>
+            </div>
+            <div class="info-item">
+                <ion-icon name="location-outline"></ion-icon>
+                <p>Islamabad, Pakistan</p>
+            </div>
+            <div class="social-links">
+                <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Amna. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        document.getElementById('downloadBtn').addEventListener('click', function () {
+            const data = [
+                ["Name", "Amna Bibi"],
+                ["Profession", "Web Designer and Developer"],
+                ["Location", "Islamabad, Pakistan"],
+                ["Experience", "2+ years"],
+                ["Skills", "HTML, CSS, Figma"],
+                ["Projects Completed", "100+"],
+                ["Email", "amnaawan123@gmail.com"]
+            ];
+
+            const ws = XLSX.utils.aoa_to_sheet(data);
+            const wb = XLSX.utils.book_new();
+            XLSX.utils.book_append_sheet(wb, ws, "Resume");
+            XLSX.writeFile(wb, "Portfolio_Details.xlsx");
+        });
+
+        function animateProgressBars() {
+            const progressBars = document.querySelectorAll('.progress');
+            progressBars.forEach(bar => {
+                const targetWidth = bar.parentElement.parentElement.querySelector('span').textContent;
+                bar.style.width = targetWidth;
+            });
+        }
+
+        const skillsSection = document.getElementById('skills');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateProgressBars();
+                    observer.unobserve(skillsSection);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        observer.observe(skillsSection);
+    </script>
+</body>
+</html>
